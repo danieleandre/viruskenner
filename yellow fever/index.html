@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,  initial-scale=1">
+	<title></title>
+<script type="text/javascript" src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;500&display=swap" rel="stylesheet">
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+
+				function resize_altezza(){
+					jQuery(".altezzamassima").css({'height':jQuery(window).height()});
+				}
+
+				resize_altezza();
+
+				jQuery(window).resize(function(){
+					resize_altezza()
+				})
+
+				
+		});
+
+
+	</script>
+
+
+<style type="text/css">
+	body{ margin: 0px; }
+	.clr{ clear: both; }
+	.container{width: 80%; margin: 0 auto; position:relative;}
+	#section1{ width: 100%; background-color: #8fbc8f;}
+	#section2{ width: 100%; background-color: #444;}
+	#section3{ width: 100%; background-color: #8fbc8f;}
+	#section4{ width: 100%; background-color: #444;}
+	#section5{ width: 100%; background-color: #8fbc8f;}
+
+	.box-testo{ position: absolute; bottom: 15%; left: 0px ; }
+	.box-testo h4{ font-family: 'Barlow', sans-serif; font-size: 30px; color: #fff; margin: 0px; font-weight: 100px ;}
+	.box-testo h2{ font-family: 'Barlow', sans-serif; font-size: 50px; color: #fff; margin: 0px; font-weight: 500px ; margin-bottom: 30px;}
+	.box-testo a { font-family: 'Barlow', sans-serif; font-size: 20px; color: #fff; margin: 0px; font-weight: 500px ; text-decoration: none; display: inline-block; border: 2px solid #fff; padding: 20px; width: 150px; text-align: center;}
+	.box-testo a:hover{background-color: #fff; color: #111}
+
+	#menu_interno{width: 80%; margin: 0 auto;}
+	#menu_navigazione{width: 80%; position: relative; float: left;}
+	#logo{ width: 20%; position: relative; float: left; background-color: #444;}
+	#menu{ position: fixed; z-index: 2; width: 100%; height: auto;top: 30px;}
+	li{ list-style-type: none; font-family: 'Barlow', sans-serif; font-size: 25px; color: #fff;  font-weight: 500px ; float: left;margin: 0px 20px;}
+	li:hover{text-decoration: underline; cursor: pointer;}
+
+</style>
+
+
+</head>
+<body>
+	<div id="main-container">
+<div    id="menu">
+	<div    id="menu_interno">
+		<div id="logo"></div>
+		<div id="menu_navigazione">	
+			<ul>
+				<li>CONTATTI</li>
+				<li>IL TEAM</li>
+				<li>IL PROGETTO</li>
+				<li>GIOCO</li>
+				<li>FONTI</li>
+				
+			</ul>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
+	<div id="section1"class="altezzamassima">	
+		<div class="container altezzamassima"> 
+			<div class="box-testo">
+					 
+					<h2>CHE COS'È </h2>
+					<a href="">GUARDA</a>			 
+			 		</div>
+ 				<div class="clr"></div>
+		 </div>
+	 </div>
+
+
+	<div id="section2" class="altezzamassima"> <div class="container altezzamassima"> 
+			<div class="box-testo">
+					 
+					<h2> SINTOMI </h2> 
+					<a href="">GUARDA</a>			 
+			 		</div>
+ 				<div class="clr"></div>
+		 </div>
+	</div>
+
+
+	<div id="section3" class="altezzamassima"> <div class="container altezzamassima"> 
+			<div class="box-testo">
+					
+					<h2> CURE </h2>
+					<a href="">GUARDA</a>			 
+			 		</div>
+ 				<div class="clr"></div>
+		 </div>
+	</div>
+
+
+	<div id="section4" class="altezzamassima"><div class="container altezzamassima"> 
+			<div class="box-testo">
+					
+					<h2>CAUSA</h2>
+					<a href="">GUARDA</a>			 
+			 		</div>
+ 				<div class="clr"></div>
+		 </div>
+	 </div>
+
+
+	<div id="section5" class="altezzamassima"><div class="container altezzamassima"> 
+			<div class="box-testo">
+	
+					<h2>VACCINO</h2>
+					<a href="">GUARDA</a>			 
+			 		</div>
+ 				<div class="clr"></div>
+		 </div>
+	 </div>
+
+
+
+
+
+
+
+</body>
+</html>
